@@ -1,8 +1,3 @@
-# go-cache
-This project encapsulates multiple db servers, redis、ledis、memcache、file、memory、nosql、postgresql
-
-example
-```
 package main
 
 import (
@@ -23,4 +18,3 @@ func main() {
 
 	ca.Put("liyan", "cache", 60)
 }
-```
