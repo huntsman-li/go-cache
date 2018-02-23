@@ -113,7 +113,7 @@ func (c *RedisCacher) Flush() error {
 // StartAndGC starts GC routine based on config string settings.
 // AdapterConfig: network=tcp,addr=:6379,password=macaron,db=0,pool_size=100,idle_timeout=180,hset_name=MacaronCache,prefix=cache:
 func (c *RedisCacher) StartAndGC(opts cache.Options) error {
-	c.hsetName = "MacaronCache"
+	c.hsetName = "Cache"
 	c.occupyMode = opts.OccupyMode
 
 	cfg, err := ini.Load([]byte(strings.Replace(opts.AdapterConfig, ",", "\n", -1)))

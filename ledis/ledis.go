@@ -14,7 +14,7 @@ import (
 	"github.com/huntsman-li/go-cache"
 )
 
-var defaultHSetName = []byte("MacaronCache")
+var defaultHSetName = []byte("Cache")
 
 // LedisCacher represents a ledis cache adapter implementation.
 type LedisCacher struct {
