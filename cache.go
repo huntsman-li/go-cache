@@ -5,7 +5,7 @@ import (
 	"gopkg.in/ini.v1"
 )
 
-const _VERSION = "0.3.0"
+const _VERSION = "0.0.1"
 
 func Version() string {
 	return _VERSION
